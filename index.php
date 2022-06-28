@@ -1,53 +1,59 @@
-<?
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Новости банка");
-?><?$APPLICATION->IncludeComponent(
-	"bitrix:news.list",
-	".default",
-	Array(
-		"IBLOCK_TYPE" => "news",
-		"IBLOCK_ID" => "1",
-		"NEWS_COUNT" => "20",
-		"SORT_BY1" => "ACTIVE_FROM",
-		"SORT_ORDER1" => "DESC",
-		"SORT_BY2" => "SORT",
-		"SORT_ORDER2" => "ASC",
-		"FILTER_NAME" => "",
-		"FIELD_CODE" => array(0=>"",1=>"",),
-		"PROPERTY_CODE" => array(0=>"",1=>"",),
-		"CHECK_DATES" => "Y",
-		"DETAIL_URL" => "",
-		"AJAX_MODE" => "N",
-		"AJAX_OPTION_SHADOW" => "Y",
-		"AJAX_OPTION_JUMP" => "N",
-		"AJAX_OPTION_STYLE" => "Y",
-		"AJAX_OPTION_HISTORY" => "N",
-		"CACHE_TYPE" => "A",
-		"CACHE_TIME" => "36000000",
-		"CACHE_FILTER" => "N",
-		"CACHE_GROUPS" => "Y",
-		"PREVIEW_TRUNCATE_LEN" => "",
-		"ACTIVE_DATE_FORMAT" => "d.m.Y",
-		"DISPLAY_PANEL" => "N",
-		"SET_TITLE" => "N",
-		"SET_STATUS_404" => "N",
-		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
-		"ADD_SECTIONS_CHAIN" => "N",
-		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"PARENT_SECTION" => "",
-		"PARENT_SECTION_CODE" => "",
-		"DISPLAY_TOP_PAGER" => "N",
-		"DISPLAY_BOTTOM_PAGER" => "N",
-		"PAGER_TITLE" => "Новости",
-		"PAGER_SHOW_ALWAYS" => "N",
-		"PAGER_TEMPLATE" => "",
-		"PAGER_DESC_NUMBERING" => "N",
-		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000000",
-		"PAGER_SHOW_ALL" => "N",
-		"DISPLAY_DATE" => "Y",
-		"DISPLAY_NAME" => "Y",
-		"DISPLAY_PICTURE" => "Y",
-		"DISPLAY_PREVIEW_TEXT" => "Y",
-		"AJAX_OPTION_ADDITIONAL" => ""
-	)
-);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
+$APPLICATION->SetTitle("Главная"); ?>
+
+
+
+<div class="contacts">
+	<div class="container">
+		<div class="contacts__inner">
+			<div class="section-title">Контакты</div>
+			<div class="contacts__wrapper">
+				<div class="contacts__info">
+					<div class="contacts__card">
+						<div class="contacts__card-title">
+							<img src="<?= DEFAULT_TEMPLATE_PATH ?>/img/icons/build.svg" alt="" class="contacts__card-img">
+							ОФИС:
+						</div>
+						<div class="contacts__card-text">г. Сыктывкар, ул. Тентюковская, д. 471.</div>
+					</div>
+					<div class="contacts__card">
+						<div class="contacts__card-title">
+							<img src="<?= DEFAULT_TEMPLATE_PATH ?>/img/icons/contacts-phone.svg" alt="" class="contacts__card-img">
+							Телефоны:
+						</div>
+						<div class="contacts__card-text">8(904)270-80-77 – Сыктывкар</div>
+						<div class="contacts__card-text">8(922)982-33-79 – Киров</div>
+					</div>
+					<div class="contacts__card">
+						<div class="contacts__card-title">
+							<img src="<?= DEFAULT_TEMPLATE_PATH ?>/img/icons/email.svg" alt="" class="contacts__card-img">
+							E-MAIL:
+						</div>
+						<div class="contacts__card-text">sale@vlites.ru – отдел продаж</div>
+						<div class="contacts__card-text">info@vlites.ru – отдел монтажа</div>
+					</div>
+					<div class="contacts__card">
+						<div class="contacts__card-title">
+							<img src="<?= DEFAULT_TEMPLATE_PATH ?>/img/icons/contacts-vk.svg" alt="" class="contacts__card-img">
+							ВКОНТАКТЕ:
+						</div>
+						<div class="contacts__card-text">vk.com/vlites</div>
+					</div>
+					<div class="contacts__card">
+						<div class="contacts__card-title">
+							<img src="<?= DEFAULT_TEMPLATE_PATH ?>/img/icons/document.svg" alt="" class="contacts__card-img">
+							РЕКВИЗИТЫ:
+						</div>
+						<div class="contacts__card-text">ООО «В-Саунд», ИНН – 1101165762, ОГРН 1191121004788.</div>
+					</div>
+
+				</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d945.4173404045487!2d50.81065938910554!3d61.71127184600711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43f62a9518b9055d%3A0xb86f6c18482c42e8!2z0KLQtdC90YLRjtC60L7QstGB0LrQsNGPINGD0LsuLCA0NzEsINCh0YvQutGC0YvQstC60LDRgCwg0KDQtdGB0L8uINCa0L7QvNC4LCAxNjcwMTQ!5e0!3m2!1sru!2sru!4v1655703394874!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+
+
+	<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
